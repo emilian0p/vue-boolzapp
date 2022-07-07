@@ -17,26 +17,25 @@ body {
     width: 900px;
     max-width: 100%;  
     height: calc(100vh - 40px);
-    background: white;
+    background: #fff;
  }
  .container .left-side {
     position: relative;
     flex: 30%;
-    background: red;
+    background: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 
  }
  .container .right-side {
     position: relative;
     flex: 70%;
-    background: green;
  }
-/*  .container .right-side::before {
+.container .right-side::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(img/mine.jpg);
-    opacity: 0.06;
- } */
+    background: url(./img/mine.jpg);
+ }
