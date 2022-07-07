@@ -5,13 +5,10 @@
     border: 1px red solid;
 }
 
-/* background color */
-.background-green{
-    background-color: rgb(15, 121, 88);
-    height: 20vh;
-}
-
-.background-grey{
-    background-color: lightgray;
-    height: 80vh;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( rgb(15, 121, 88) 0%, rgb(15, 121, 88) 150px, lightgray 150px, lightgray 100%);
 }
