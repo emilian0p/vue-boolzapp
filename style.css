@@ -86,3 +86,78 @@
     height: 65px;
     background-color: #eae9ea;
 }
+
+.message-input-icon {
+    font-size: 25px;
+    color: rgb(100, 100, 100);
+}
+.chat-bg {
+    height: calc(100% - 120px);
+    background: url(../img/mine.jpg) repeat 50% 50%;
+    font-weight: 500;
+}
+
+.message-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sent,
+.received {
+    border-radius: 15px;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0 0 15px 1px rgba(111, 143, 135, 0.4);
+}
+
+.sent {
+    background-color: #dcf8c0;
+    float: right;
+}
+
+.received {
+    background-color: #fff;
+    float: left;
+}
+
+.chat-message {
+    position: relative;
+}
+
+.mod-box {
+    position: absolute;
+    background-color: #fff;
+    top: 35px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.message-option {
+    color: rgb(112, 112, 112);
+}
+.contact-container:hover {
+    background-color: #e9ebec;
+    cursor: pointer;
+}
+
+.notify-icon-on:hover,
+.notify-icon-off:hover,
+.link:hover,
+.fas:hover,
+.far:hover,
+.message-option:hover {
+    color: #419388;
+    cursor: pointer;
+}
+
+.contacts-list-container {
+    height: 100%;
+}
+
+
+
+.selected-contact {
+    background-color: #cdcfcf;
+}
+
