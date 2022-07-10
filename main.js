@@ -162,45 +162,5 @@ const app = new Vue({
                         status: 'received'
                     }
                 ],
-
-                methods: {
-                    addPicture(index){
-                        return './img/avatar'+ this.contacts[index].avatar + '.jpg'
-                    },
-                    changeChatIndex(index){
-                        console.log(this.activeChatIndex)
-                        this.activeChatIndex = index
-                    },
-                    addNewChatMessage(inputMessage){
-                        this.contacts[this.activeChatIndex].messages.push({date: this.getTimeOfUser(),message:inputMessage,status: 'sent'})
-                        this.newChatMessage = ''
-                    },
-                    getTime(index){
-                       let dateString = this.contacts[this.activeChatIndex].messages[index].date
-                       let fulldate = dateString = dateString.substring(dateString.indexOf(' '), )
-                       return fulldate.slice(0,6)
-                    },
-                    getLastMessage(activeChatIndex){
-                        console.log(activeChatIndex)
-                        let messagesList = this.contacts[this.activeChatIndex].messages;
-                        console.log(messagesList[messagesList.length - 1].date)
-            
-                        return messagesList[messagesList.length - 1].date;
-                    },
-                    trythis(prova){
-                        console.log(prova)
-                    },
-                    getTimeOfUser(){
-                        const date = new Date();
-                        let now = date.getHours() + ':' + date.getMinutes();
-                        return now
-                    },
-                    messageAnswer(){
-                        setTimeout (() =>{
-                            this.contacts[this.activeChatIndex].messages.push({date: this.getTimeOfUser(),message:"ok",status: 'received'})
-                            this.newChatMessage = ''
-            
-                        },1000)
-                    },
             }
         ]
