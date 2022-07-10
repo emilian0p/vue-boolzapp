@@ -7,7 +7,6 @@
 .background {
     height: 100vh;
     background: linear-gradient( rgb(15, 121, 88) 0%, rgb(15, 121, 88) 150px, lightgray 150px, lightgray 100%);
-
 }
 
 .sidebar {
@@ -77,4 +76,13 @@
 .input.message {
     width: 80%;
     padding: 10px;
+}
+
+.main {
+    width: 65%;
+}
+
+.chat-control-section {
+    height: 65px;
+    background-color: #eae9ea;
 }
