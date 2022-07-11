@@ -93,7 +93,7 @@
 }
 .chat-bg {
     height: calc(100% - 120px);
-    background: url(../img/mine.jpg) repeat 50% 50%;
+    background: url(./img/mine.jpg) repeat 50% 50%;
     font-weight: 500;
 }
 
@@ -142,6 +142,7 @@
 }
 
 .notify-icon-on:hover,
+.notify-icon-off:hover,
 .link:hover,
 .fas:hover,
 .far:hover,
@@ -160,3 +161,27 @@
     background-color: #cdcfcf;
 }
 
+
+
+.message {
+    border-radius: 10px;
+    padding: 18px 30px 18px 10px;
+    width: 45%;
+    overflow: auto;
+    margin: 8px;
+}
+
+.message > span {
+    color: grey;
+    opacity: 0.5;
+    font-size: .7rem;
+    position: absolute;
+    bottom: 1px;
+    right: 8px;
+}
+.message-container {
+    height: calc(100% - 126px);
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
