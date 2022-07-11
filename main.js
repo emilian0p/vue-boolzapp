@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#app',
-    data: { 
+    currentIndex: 0,
+    data: {
         contacts: [
             {
                 name: 'Michele',
@@ -162,9 +163,10 @@ const app = new Vue({
                         status: 'received'
                     }
                 ],
-
-                methods: {
-                   
-                    
             }
         ]
+    },
+    methods: {
+
+    }
+});
