@@ -56,7 +56,7 @@
                 <!-- contacts list -->
                 <section class="contacts-list-container overflow-auto me-3 border-end">
                     <div v-for="(contact, index) in contacts" class="contact-container">
-                        <div v-if="contact.name.toLowerCase()" class="p-3" @click="changeChat(index)"
+                        <div v-if="contact.name" class="p-3" @click="changeChat(index)"
                             :class="{'selected-contact': currentIndex === index}">
                             <img class="avatar-image" :src="'img/avatar' + contact.avatar + '.jpg'" alt="" />
                             <p class="fw-bold d-inline"> {{ contacts[index].name }} </p>
