@@ -168,12 +168,6 @@ const app = new Vue({
         changeChat: function (index) {
             this.currentIndex = index;
         },
-        scrollToEnd: function () {
-            setTimeout(() => {
-                let container = this.$el.querySelector(".chat-bg");
-                container.scrollTo(0, container.scrollHeight);
-            }, 1200);
-        },
         getLastAccess: function (index) {
             let lastMex = this.contacts[index].messages.length - 1;
             return this.contacts[index].messages[lastMex].date;
