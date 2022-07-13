@@ -180,7 +180,6 @@
     right: 8px;
 }
 .message-container {
-    height: calc(100% - 126px);
     width: 100%;
     margin: 0 auto;
     overflow-y: scroll;
