@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="./style.css">
@@ -51,7 +51,7 @@
                 <section class="search-container rounded m-2 px-2 py-1 d-flex">
                     <i class="align-self-center pe-3 icons fas fa-search"></i>
                     <input class="search input text-size" placeholder="Cerca o inizia una nuova chat"
-                        type="text" />
+                        v-model="searchName" type="text" />
                 </section>
                 <!-- contacts list -->
                 <section class="contacts-list-container overflow-auto me-3 border-end">
